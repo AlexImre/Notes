@@ -1,0 +1,4 @@
+running tech docs locally
+docker build -t test-amius-docs . && \
+docker run -d -ti -p 8080:8000 --name test-docs test-amius-docs
+docker rm -f test-docs

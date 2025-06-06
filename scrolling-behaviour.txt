@@ -1,0 +1,2 @@
+- make sure there is no component or <Box></Box> of stuff above the component that you want to be scrollable, this will push the scrollable component down... separate then out, dont wrap within the same 100% parent
+- sometimes <Grid><Grid/> has some hidden styling which can make implementing scroll behaviour difficult, try with <Box><Box/> if possible

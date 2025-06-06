@@ -1,0 +1,14 @@
+3 lifecycles
+
+transient
+simplest e.g. calling new
+
+scoped
+usually assume scope of single request, and disposes when its finished
+
+singleton
+create only one instance in the memory of the service, same instance all the time, reliable memory usage
+
+Look at SOLID Principles, last principle is dependency inversion
+
+settle price

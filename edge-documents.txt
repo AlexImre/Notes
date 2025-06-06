@@ -1,0 +1,7 @@
+edge documents are here, example for confirmations
+\\am1-file01\OTC\EdgeDocumentBase\Documents\13205\Confirmations
+
+edge backend -> document service
+
+2025-06-05 12:54:08 - there was an issue with document services failing to read output file name even though the confirmations were processed, 
+causing the documents service to fail. If docs are processed, we make sure to continue the flow.
