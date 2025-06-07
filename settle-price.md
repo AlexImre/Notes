@@ -5,3 +5,5 @@
 - clear SettlePrice cache https://otc.amius.com/Admin/Cache/Index
 
 ![alt text](images/ohlc.png)
+
+![alt text](images/bad-prices.png)

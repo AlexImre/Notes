@@ -58,17 +58,18 @@ global chromeIndex := 0
 ^e:: {
     global chromeWindows, chromeIndex
 
-    ; If the list is empty or any handle is invalid, rebuild the full list
     if chromeWindows.Length = 0 || !AllWindowsValid(chromeWindows) {
         chromeWindows := []
         for hwnd in WinGetList() {
             try {
-                if WinGetProcessName(hwnd) = "chrome.exe" && WinGetTitle("ahk_id " hwnd) {
-                    chromeWindows.Push(hwnd)
+                if WinGetProcessName(hwnd) = "chrome.exe" {
+                    title := WinGetTitle(hwnd)
+                    if title != ""
+                        chromeWindows.Push(hwnd)
                 }
             }
         }
-        chromeIndex := 0  ; reset index only when rebuilding the list
+        chromeIndex := 0
     }
 
     if chromeWindows.Length = 0 {
@@ -76,12 +77,11 @@ global chromeIndex := 0
         return
     }
 
-    ; Move to the next window
     chromeIndex += 1
     if chromeIndex > chromeWindows.Length
         chromeIndex := 1
 
-    WinActivate chromeWindows[chromeIndex]
+    WinActivate(chromeWindows[chromeIndex])
 }
 
 AllWindowsValid(list) {
