@@ -1,0 +1,6 @@
+staging machine
+10.10.20.183
+
+use these creds
+STG Worker
+5U2fpySwkpvpA4c4

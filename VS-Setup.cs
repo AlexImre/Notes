@@ -14,3 +14,5 @@ public class C : VisualCommanderExt.ICommand
     }
 }
 ```
+
+// Edit.GoToAll, change to Ctrl+P
