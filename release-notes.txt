@@ -1,0 +1,73 @@
+2025-06-09 08:57:11
+
+SCENARIO:
+- allow scenario analysis for quotes only
+- ensure basis values appear in correct order (only impacted some locales)
+
+PM:
+- improve persistence of 'merge early settles' option
+- further formatting improvements of numerical values in the UI
+- simplify viewing / editing row grouping in the main grid
+
+PPP:
+- add asOfDate to ppp quotes
+- hide booking button in booking dialog
+- add settlement type to overall PPP structures
+
+EDGE:
+- ensure we only display active Client Sub Accounts
+- fix delete button on the client sub account editor
+- fix auth issues for market data proxy
+
+SOLVER:
+- ensures correct application of commission for solver quotes and swaps for both Amius, clients and Resellers. Please see earlier email from Ben for further details.
+
+Notes from Ben on Solver changes:
+Amius and clients:
+Solver
+- Commission will be used to value to the trade but not added to the trade.
+- If the trade account should have commission applied (from a Reseller) it will do so, this cannot be overridden.
+- -ve commission is permissioned at the entity level.
+
+Swaps
+- Commission will be added to the trade.
+- Any commission ‘return’ will always be applied and cannot be overridden.
+
+Resellers:
+Solver
+- Commission will be used to value the trade and applied as the comms; it can be overridden.
+Swaps
+- Commission will be added to the trade.
+- Any commission ‘return’ will always be applied and cannot be overridden.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+DETAILED NOTES
+
+SCENARIO:
+- allow scenario analysis on quotes where accounts have no positions
+- ensure basis values appear in correct order (only impacted locales using commas instead of periods, e.g. brazil)
+
+PM:
+- improve persistence of 'merge early settles' option (browser 'remembers' the user's setting)
+- further formatting improvements of numerical values in the UI (rebate + min/max notionals)
+- simplify viewing / editing row grouping in the main grid
+
+PPP:
+- add asOfDate to ppp quotes (nothing visual to check here)
+- hide booking button in booking dialog (amius users can no longer see this button (bottom left of booking dialog))
+- add settlement type to overall PPP structures (this includes an additional option to set when building a ppp quote)
+
+TEMPLATES:
+- ensure we only display active Client Sub Accounts
+- fix delete button on the client sub account editor
+
+EDGE:
+- fix auth issues for market data proxy (nothing visual to check here)
+
+SOLVER:
+ensures correct application of commission for solver quotes and swaps for both Amius, clients and Resellers. Please see earlier email from Ben for further details.
+
+

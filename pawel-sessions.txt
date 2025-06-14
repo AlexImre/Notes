@@ -1,0 +1,6 @@
+pawel sessions
+
+2025-06-12 16:41:08
+observability / tracing / containers
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_atomic_host/7/html/overview_of_containers_in_red_hat_systems/introduction_to_linux_containers
+for next week - networking nginx consul reverse proxies
