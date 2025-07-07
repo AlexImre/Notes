@@ -1,0 +1,7 @@
+gitlab
+
+gitlab runner is running on Devlinux. To renew token:
+sudo su - gitlab-runner
+docker login -u alexandre.imre -p <token> gitlab.amius.com:5678
+
+notes: username is GL username, and access token is access token configured in GL settings

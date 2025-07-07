@@ -1,0 +1,4 @@
+ask nabeel how to setup metrics, e.g. gitlab
+
+want to add some widgets to here
+https://one.eu.newrelic.com/dashboards/detail/NjUzNjUyNXxWSVp8REFTSEJPQVJEfGRhOjUyNTE2Ng?account=6536525&state=4a26a41c-550e-59e3-1eb7-a56dcd609cd9

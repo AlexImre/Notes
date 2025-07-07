@@ -1,0 +1,4 @@
+debug apps / websites
+
+old website Am1-papp01 logs:
+https://one.eu.newrelic.com/nr1-core/logger/logs-summary/NjUzNjUyNXxJTkZSQXxOQXwyOTkwNjE2NTk2OTM1OTk4MzA5?account=6536525&duration=1800000&filters=%28name%20LIKE%20%27am1-pa%27%20OR%20id%20%3D%20%27am1-pa%27%20OR%20domainId%20%3D%20%27am1-pa%27%29&state=feb73cd6-5d11-b069-dc9e-725ec15eb1d8

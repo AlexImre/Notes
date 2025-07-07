@@ -1,0 +1,7 @@
+release manager tool
+
+to do:
+
+- redis
+- auth?
+- protect api limits

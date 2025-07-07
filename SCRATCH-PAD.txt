@@ -1,0 +1,19 @@
+SCRATCH PAD
+
+Underlying Editor Release Notes
+- disable code field in key data, since this cant actually be changed
+- automatically navigate to new underlying once a new one is created
+- minor improvements to form layouts
+- minor improvements to default values and formatting
+
+
+
+- simplify process of specifying fully filled / no fill when completing basket actions
+- ensure cancelling state is visible on unclaimed baskets
+- add date to basket timestamp
+- improve clarity of basket states in oms history
+
+
+
+- convert invoice editor to new style
+- include a drop down to be able able to select the correct Amius entity

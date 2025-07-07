@@ -1,73 +1,64 @@
-2025-06-09 08:57:11
+2025-06-30
 
-SCENARIO:
-- allow scenario analysis for quotes only
-- ensure basis values appear in correct order (only impacted some locales)
+Not much to go this week
 
-PM:
-- improve persistence of 'merge early settles' option
-- further formatting improvements of numerical values in the UI
-- simplify viewing / editing row grouping in the main grid
+@rich
+position-operation-api
+20/06/2025 | Richard Parry | Update Libraries
 
-PPP:
-- add asOfDate to ppp quotes
-- hide booking button in booking dialog
-- add settlement type to overall PPP structures
+you also previously mentioned 
+execution
+06/11/2024 | Mary Antonisamy | Ma/mass transit
+tt-market-data
+10/10/2024 | Luke Robertson | Migrate tt market data to k8s CI flow
+21/10/2024 | Mary Antonisamy | add IOption pattern for the MessagingConfig and removed the additional call to...
+13/11/2024 | Richard Parry | Devlinux Config
+valuation
+02/09/2022 | Richard Parry | Update Packages
+02/09/2022 | Richard Parry | CI File
+16/05/2024 | Elliot Solomon | changed directory from app to opt
+16/05/2024 | Elliot Solomon | updated dockerFile
 
-EDGE:
-- ensure we only display active Client Sub Accounts
-- fix delete button on the client sub account editor
-- fix auth issues for market data proxy
+basket-validation
+24/06/2025 | Elliot Solomon | package update to deserialise Json
 
-SOLVER:
-- ensures correct application of commission for solver quotes and swaps for both Amius, clients and Resellers. Please see earlier email from Ben for further details.
-
-Notes from Ben on Solver changes:
-Amius and clients:
-Solver
-- Commission will be used to value to the trade but not added to the trade.
-- If the trade account should have commission applied (from a Reseller) it will do so, this cannot be overridden.
-- -ve commission is permissioned at the entity level.
-
-Swaps
-- Commission will be added to the trade.
-- Any commission ‘return’ will always be applied and cannot be overridden.
-
-Resellers:
-Solver
-- Commission will be used to value the trade and applied as the comms; it can be overridden.
-Swaps
-- Commission will be added to the trade.
-- Any commission ‘return’ will always be applied and cannot be overridden.
-
----------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-DETAILED NOTES
-
-SCENARIO:
-- allow scenario analysis on quotes where accounts have no positions
-- ensure basis values appear in correct order (only impacted locales using commas instead of periods, e.g. brazil)
-
-PM:
-- improve persistence of 'merge early settles' option (browser 'remembers' the user's setting)
-- further formatting improvements of numerical values in the UI (rebate + min/max notionals)
-- simplify viewing / editing row grouping in the main grid
-
-PPP:
-- add asOfDate to ppp quotes (nothing visual to check here)
-- hide booking button in booking dialog (amius users can no longer see this button (bottom left of booking dialog))
-- add settlement type to overall PPP structures (this includes an additional option to set when building a ppp quote)
-
-TEMPLATES:
-- ensure we only display active Client Sub Accounts
-- fix delete button on the client sub account editor
-
-EDGE:
-- fix auth issues for market data proxy (nothing visual to check here)
-
-SOLVER:
-ensures correct application of commission for solver quotes and swaps for both Amius, clients and Resellers. Please see earlier email from Ben for further details.
+reserves-api
+22/04/2025 | Elliot Solomon | using IHostedApplicationLifetime to avoid race condition in startup
 
 
+
+Not much to release this week, 
+
+Sounds like we need a hot fix for
+
+https://teams.microsoft.com/l/message/19:73677459c64744e48d801e88783c1749@thread.tacv2/1751042557240?tenantId=06c5ddee-b3ed-4943-a753-21777ab321c5&groupId=587c5b46-8cf0-4ea0-8ae2-6452c2ba8a8d&parentMessageId=1751042557240&teamName=Technology%20Support&channelName=Tech%20Support%20-%20Trading&createdTime=1751042557240&ngc=true
+
+
+
+just spoke to Rich, think it might be a good time to start making some progress on the tt-market-data changes? @ben thoughts?
+
+If agreed,
+
+lets get this to staging
+tt-market-data
+02/12/2024 | Alexandre Imre | Update .gitlab-ci.yml
+23/12/2024 | Mary Antonisamy | Ma/identity key value update
+23/12/2024 | Richard Parry | Devlinux Config
+24/12/2024 | Richard Parry | Dotnet Version
+26/12/2024 | Richard Parry | Package Update
+06/01/2025 | Richard Parry | SDK Logs
+01/05/2025 | Richard Parry | MA Linux
+
+and then we have the following waiting to be released
+
+execution
+06/11/2024 | Mary Antonisamy | Ma/mass transit
+tt-market-data
+10/10/2024 | Luke Robertson | Migrate tt market data to k8s CI flow
+21/10/2024 | Mary Antonisamy | add IOption pattern for the MessagingConfig and removed the additional call to...
+13/11/2024 | Richard Parry | Devlinux Config
+valuation
+02/09/2022 | Richard Parry | Update Packages
+02/09/2022 | Richard Parry | CI File
+16/05/2024 | Elliot Solomon | changed directory from app to opt
+16/05/2024 | Elliot Solomon | updated dockerFile
